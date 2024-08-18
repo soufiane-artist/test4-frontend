@@ -1,0 +1,211 @@
+.Account2{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color:#6d86b18e ;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Account-container2{
+    height: 90%;
+    width: 90%;
+    overflow: auto;
+    background-color: #253248;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.603);
+}
+.Balance{
+    padding: 12px;
+    overflow: auto;
+    background-color: rgb(240, 240, 240);
+}
+.Balance .container{
+    height: 100%;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Balance .container .Balance-Left{
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Balance .container .Balance-Left .amount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    gap: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Balance .container .Balance-Left .amount h3{
+    font-size: 15px;
+    color: rgb(0, 36, 109);
+    margin: 0;
+}
+.Balance .container .Balance-Left .amount h1{
+    font-family: 300;
+    font-size: 23px;
+    margin: 0;
+    color: rgb(0, 36, 109);
+}
+.Balance .container .Balance-Left .amount p{
+    font-size: 12px;
+    margin: 0;
+}
+.Balance .container .Balance-Left .amount button{
+    background-color: blue;
+    width: fit-content;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 3px 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.Balance .container .Balance-Left .amount .money{
+    background-color: rgb(240, 240, 240);
+    padding: 5px;
+}
+.Balance .container .Balance-Left .amount .money p{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    align-items: center;
+    width: 100%;
+    color: rgb(0, 36, 109);
+}
+
+.Balance .container .Balance-Left h6{
+    font-size: 14px;
+    margin-top: 7px;
+    text-decoration: underline;
+    color: rgb(0, 36, 109);
+
+}
+.Balance .container .Balance-Left .transfer-wek{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    gap: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Balance .container .Balance-Left .transfer-wek h6{
+    font-size: 12px;
+    color: rgb(0, 36, 109);
+
+}
+.Balance .container .Balance-Left .transfer-wek h1{
+    font-size: 18px;
+    color: rgb(0, 36, 109);
+
+}
+.Balance .container .Balance-Left .transfer-wek p{
+    font-size: 12px;
+    text-decoration:underline;
+    color: rgb(0, 36, 109);
+
+}
+
+.Balance .container .Balance-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Balance .container .Balance-right .user-id h6{
+    background-color: rgb(234, 255, 0);
+    border-radius: 3px;
+    padding: 2px 10px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.079) 0px 3px 8px;    
+    border: 1px solid rgba(0, 0, 118, 0.135);
+}
+.Balance .container .Balance-right .user-id .line-data{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.079) 0px 3px 8px;  
+    padding: 5px;  
+}
+.Balance .container .Balance-right .user-id .line-data h3{
+    color: green;
+}
+.Balance .container .Balance-right .user-id .line-data h4{
+    font-size: 14px;
+}
+.Balance .container .Balance-right .user-id .line-data h5{
+    font-size: 12px;
+    font-weight: 200;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Balance .container .Balance-right .user-id .line-data .line{
+    background-color: rgba(0, 0, 79, 0.266);
+    height: 5px;
+    width: 100%;
+}
+.Balance .container .Balance-right .user-id .line-data .line .line-nav{
+    background-color: blue;
+    width: 61%;
+    height: 100%;
+}
+.Balance .container .Balance-right .chart{
+    background-color: white;
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.079) 0px 3px 8px;    
+}
+.Balance .container .Balance-right .chart h6{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: underline;
+}
+.Balance .container .Balance-right .chart h6 span{
+    color: green;
+    font-size: 24px;
+}
+.Balance .container .Balance-right .chart p{
+    font-size: 12px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 0, 11);
+    padding: 6px;
+    border-left: 5px solid green;
+}
+@media (max-width: 600px) {
+    .Balance-Left{
+        width: 100%;
+    }
+    .Balance .container{
+    flex-direction: column;
+    width: 100%;
+    }
+    .Balance .container .Balance-right{
+        width: 100%;
+    }
+    .Account-container2{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+ }

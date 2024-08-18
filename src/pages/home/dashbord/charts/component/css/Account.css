@@ -1,0 +1,54 @@
+.Account{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color:#6d86b18e ;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Account-container{
+    height: 90%;
+    width: 50%;
+    background-color: #253248;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.603);
+}
+.Account-container h1{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+    width: fit-content;
+    rotate: 180deg;
+    color: white;
+}
+.Account-container h1:hover{
+    color: rgb(170, 170, 170);
+    cursor: pointer;
+    background-color: rgba(240, 248, 255, 0.137);
+}
+.Account-Banks{
+    background-color: aliceblue;
+    width: 96%;
+    overflow: auto;
+    margin: auto;
+    height: 80%;
+    border-radius: 5px;
+}
+.Banks-img {
+    display: flex;
+    border: 1px solid #2532483f;
+    height: 65px;
+    justify-content: space-around;
+}
+@media (max-width: 600px) {
+    .Account-container{
+     height: 100%;
+     width: 100%;
+    }
+ }

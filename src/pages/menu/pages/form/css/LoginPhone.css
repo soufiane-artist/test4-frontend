@@ -1,0 +1,72 @@
+.LoginPone{
+    height: 100vh;
+    background:linear-gradient(to top,black,rgba(255, 255, 255, 0.13)), url(https://i.pinimg.com/564x/80/79/9f/80799f725b1409dacb05338a110bdbd1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@keyframes loginPhone{
+    0%{
+         backdrop-filter: blur(12px);
+    }
+}
+.LoginPone-container{
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    animation: loginPhone 1s ;
+}
+.back-icons{
+    width: 90%;
+    position: absolute;
+    top: 12px;
+    direction: rtl;
+    width: fit-content;
+    right: 15px;
+    rotate: 180deg;
+    cursor: pointer;
+}
+.login-phone-inp{
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    width: 90%;
+}
+.login-phone-inp a{
+    font-size: 20px;
+}
+.login-phone-inp-email{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 12px;
+}
+.login-phone-inp-pass{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 12px;
+}
+.login-phone-inp input{
+    width: 90%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: 45px;
+    border-radius: 12px;
+}
+.login-phone-login{
+     height: 45px;
+    width: 60%;
+    margin: auto;
+    background:linear-gradient(to top,rgba(129, 116, 0, 0),rgba(188, 201, 0, 0.568)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYI7jjatp_0Q8n1d5K7cOMY1cMGwx82AyjqWIyp_eghJEkqNZ3uH4FQ5GAsXy-Mq8Koyk&usqp=CAU);
+    font-weight: 700;
+    border-radius: 12px;
+    border: 1px solid white;
+}
+.LoginPone h2{
+    font-size: 26px;
+    text-decoration: underline;
+}

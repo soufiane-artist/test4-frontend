@@ -1,0 +1,24 @@
+.account-btns{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.account-btn-deposit{
+    height: 40px;
+    width: 50%;
+    background-color: #f9f2b9;
+    color: #253248;
+    font-size: 16px;
+    font-weight: 600;
+}
+.account-btn-Transformation{
+    height: 40px;
+    width: 50%;
+    background-color: #285d64;
+    color: #f9f2b9;
+    font-size: 16px;
+    font-weight: 600;
+}

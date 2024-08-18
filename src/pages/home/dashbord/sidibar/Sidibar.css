@@ -1,0 +1,133 @@
+.Dashbod-sidibar{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background-color: #05122b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: sidibar 0.5s;
+    overflow: auto;
+}
+@keyframes sidibar {
+    0%{
+        translate: -100px 0;
+    }
+}
+.Dasch-Sidibar-Container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border-right: 1px solid rgb(199, 199, 199);
+}
+.Dasch-Sidibar-Container h2{
+    color:#c0c8d8;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+    padding: 5px 8px;
+    align-items: center;
+    margin: 8px;
+    cursor: pointer;
+}
+.Dasch-Sidibar-Container h2 span{
+    font-size: 14px;
+}
+
+.Dasch-Sidibar-Container h2:hover{
+    background-color: #253248;
+}
+.dash-arrow-close{
+    background-color: #3f5479;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 5px;
+    border-right: 1px solid #b2c4e2;
+}
+.dash-arrow-close h3{
+    color: rgb(199, 199, 199);
+    font-size: 30px;
+    cursor: pointer;
+    rotate: -90deg;
+    background-color: aliceblue;
+    border-radius: 12%;
+    height: 25px;
+    width: 25px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.Profile-user{
+    padding: 0 5px ;
+    position: relative;
+    cursor: default;
+    margin-bottom: auto;
+    margin-top: 5px;
+}
+.Profile-user-info{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #3f5479;
+    padding: 7px;
+    border-radius: 12px;
+}
+.Profile-user-info img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    object-fit: cover;
+    object-position: center;
+}
+.Profile-user-name{
+    display: flex;
+    flex-direction: column;
+}
+.Profile-user-name h3{
+    font-size: 18px;
+    text-decoration: underline;
+    margin: 0;
+    color: white;
+}
+.Profile-user-name h5{
+    margin: 0;
+    font-size: 10px;
+    color: white;
+}
+.Dash-Sidibar-Container-btn{
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Dasch-Sidibar-Container-logout{
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #c0c8d8;
+}
+.Dasch-Sidibar-Container-logout h2{
+    display: flex;
+    text-decoration: underline;
+    justify-content: space-between;
+}
+.deal-number{
+    background-color: red;
+    border-radius: 12%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

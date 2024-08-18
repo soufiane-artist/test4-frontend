@@ -1,0 +1,115 @@
+.dash-arrow-open {
+    background-color: #3f5479;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 5px;
+    border-right: 1px solid #6f93d1;
+}
+.dash-arrow-open h3{
+    color: rgb(199, 199, 199);
+    font-size: 30px;
+    cursor: pointer;
+    rotate: 90deg;
+    background-color: aliceblue;
+    border-radius: 12%;
+    height: 25px;
+    width: 25px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.dash-arrow-open h3:hover{
+    font-size: 32px;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    font-size: 20px;
+}
+.dash-price-crypto{
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    left: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+.dash-price-crypto p{
+    color: #d7e2f5;
+    margin: 0;
+}
+
+.minutes{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    position: fixed;
+    left: 210px;
+}
+.minutes select{
+    background-color: #435c86;
+    border: 1px solid #6f93d1;
+    color: white;
+}
+.minutes h6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-radius: 3px;
+    padding: 2px;
+    cursor: pointer;
+    background-color: #435c86;
+    border: 1px solid #6f93d1;
+    color: aliceblue;
+}
+.Loading-Page{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: #3f5479;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+}
+.Loading-Page h1{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.minutes h6:hover{
+    background-color: #6f93d1;
+}
+@media (max-width: 600px) {
+    .dash-arrow-open h3{
+        top: 1%;
+    }
+    .dash-price-crypto{
+        left: 180px;
+        top: 13px;
+        font-size: 14px;
+    }
+    .dash-arrow-open{
+        height: fit-content;
+        background-color: transparent;
+        border: none;
+        top: 10px;
+        left: 5px;
+    }
+    .minutes{
+        left: 110px;
+    }
+}

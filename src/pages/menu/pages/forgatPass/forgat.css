@@ -1,0 +1,84 @@
+/* 
+https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg
+*/
+
+.reset-pass{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.reset-pass-container{
+    height: 100%;
+    width: 30%;
+   backdrop-filter: blur(15px);
+   display: flex;
+    align-items: center;
+    flex-direction: column;
+   justify-content: center;
+   gap: 15px;
+}
+.reset-pass-container h2{
+    color: blue;
+    font-weight: 800;
+}
+.reset-pass-container h2 span{
+    color: black;
+}
+.reset-pass-container p{
+    font-size: 14px;
+    width: 94%;
+    font-weight: 600;
+}
+.reset-pass-container .form-reset-pass{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+}
+.reset-pass-container .form-reset-pass h3{
+    font-size: 19px;
+}
+.reset-pass-container .form-reset-pass input{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    border: 2px solid blue;
+    height: 34px;
+}
+.reset-pass-container .form-reset-pass .btn-reset{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    height: 34px;
+}
+.reset-pass-container .Sign-in{
+    margin-top: 15px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reset-pass-container .copiryt-reset{
+    position: absolute;
+    bottom: 1px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(54, 54, 54);
+    font-size: 12px;
+}
+@media (max-width: 925px) {
+    .reset-pass-container{
+        width: 60%;
+     }
+}
+@media (max-width: 600px) {
+    .reset-pass-container{
+     width: 100%;
+    }
+ }

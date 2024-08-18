@@ -1,0 +1,97 @@
+.user-Profile{
+    height: 90%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.img-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-profile .FaCamera{
+    background-color: white;
+    position: relative;
+    top: -50px;
+    right: -80px;
+    border-radius: 50%;
+    padding: 5px;
+    width:40px;
+    height: 40px;
+    cursor: pointer;
+    color: #253248;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-profile .FaCamera:hover{
+    scale: 1.05;
+}
+.img-profile img{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    object-position: center;
+}
+.user-profile-Id{
+    margin: 12px;
+    background-color: yellow;
+    padding: 2px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.user-profile-Id h3{
+    color: #253248;
+    margin: 0;
+}
+.user-profile-Id #input-id-user{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: 700;
+}
+.user-profile-Id h5{
+    margin: 0;
+    color: #253248;
+}
+.user-Profile h3{
+    font-size: 18px;
+}
+.user-profile-username,.user-profile-email,.user-profile-adress,.user-profile-Code-copone {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user-profile-username h3,.user-profile-email h3,.user-profile-adress h3,.user-profile-Code-copone h3{
+    cursor: pointer;
+    background-color: rgba(243, 243, 243, 0.158);
+    padding: 5px;
+}
+
+.message-copy{
+    position: fixed;
+    top: 1%;
+    border: 1px solid #253248;
+    padding: 10px;
+    color: #253248;
+    font-weight: 700;
+    right: 12px;
+    width: 180px;
+    direction:rtl;
+    background-color: antiquewhite;
+}
+.user-profile-edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 ;
+}

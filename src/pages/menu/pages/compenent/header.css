@@ -1,0 +1,28 @@
+.page2{
+    display: flex;
+    flex-direction: column;
+}
+.page2-header{
+    background-color: rgb(251, 255, 255);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.page2-header .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+.page2-header img{
+    height: 100%;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .page2{
+     display: none;
+    }
+}

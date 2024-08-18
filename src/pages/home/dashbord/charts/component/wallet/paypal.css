@@ -1,0 +1,49 @@
+.paypal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 0;
+    height: 70%;
+    overflow: auto;
+}
+.paypal p{
+    font-size: 14px;
+    margin: 0;
+    width: 80%;
+    margin: 2px 0;
+}
+.paypal .inp-cobone{
+    background-color: rgb(238, 238, 238);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+}
+.paypal .inp-cobone input{
+    width: 80%;
+    background-color: transparent;
+    border-radius: none;
+    outline: none;
+    padding: 0px 5px;
+    border: none;
+}
+.paypal .inp-cobone h6{
+    color: blue;
+    font-size: 20px;
+    margin: 0;
+    cursor: pointer;
+    width: 40px;
+    background-color: transparent;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    justify-content: center;
+}
+.paypal_btn{
+    margin-top: 12px;
+ 
+}

@@ -1,0 +1,67 @@
+.Deposit{
+    height: 100%;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Deposit .Deposit-nav{
+    height: 95%;
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    flex-direction: column;
+}
+.Deposit .Deposit-nav .imgSrc{
+    max-height: 45px;
+}
+.Deposit .Deposit-nav .text{
+    width: 80%;
+
+}
+.Deposit .Deposit-nav .text h6{
+    font-size: 18px;
+}
+.Deposit .Deposit-nav .text p{
+    font-size: 14px;
+}
+.Deposit .Deposit-nav .banks{
+    height: 70%;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.234);
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    flex-direction: column;
+}
+.Deposit .Deposit-nav .banks .img{
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-around;
+    border: 1px solid rgba(0, 0, 0, 0.155);    
+}
+.Deposit .Deposit-nav .banks .img img{
+    height: 80%;
+    cursor: pointer;
+    max-width: 30%;
+}
+.Deposit .Deposit-nav .banks .img img:hover{
+    scale: 1.1;
+    transition: 0.2s;
+}
+@media (max-width: 600px) {
+.Deposit .Deposit-nav{
+    width: 100%;
+}
+.Deposit .Deposit-nav .banks{
+    width: 90%;
+}
+}

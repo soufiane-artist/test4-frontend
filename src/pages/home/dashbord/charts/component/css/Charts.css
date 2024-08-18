@@ -1,0 +1,28 @@
+.Account-container-checkeck{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+.Account-container-heigth{
+    height: 92%;
+    overflow: auto;
+}
+.Account-container-checkeck input{
+   font-size: 45px;
+   transform: scale(1.5);
+   height: 16px;
+   width: 16px;
+}
+.Account-container-checkeck h3{
+    margin-bottom: 0;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.Account-container hr{
+    height: 2px;
+    opacity: 1;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.575);
+}

@@ -1,0 +1,89 @@
+.Adminchat{
+    background-color: antiquewhite;
+    height: 92vh;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Adminchat-container{
+    height: 100%;
+    display: flex;
+}
+.Adminchat-container-left{
+    height: 100%;
+    padding: 8px;
+    overflow: auto;
+}
+.Adminchat-container-left-user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(197, 197, 244);
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 255, 0.324);
+    border-radius: 25px;
+    cursor: pointer;
+}
+.Adminchat-container-left-user-img{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid blue;
+}
+.Adminchat-container-left-user-active{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(225, 255, 1);
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 255, 0.324);
+    border-radius: 25px;
+    cursor: pointer;
+}
+.Adminchat-container-rigth{
+    padding: 10px;
+    background:linear-gradient(to top,rgb(0, 0, 130),rgb(0, 0, 44));
+
+}
+.Adminchat-container-rigth-admin{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+.Adminchat-container-rigth-admin p{
+   width: fit-content;
+   background: linear-gradient(to left,rgb(93, 114, 255),blue);
+   padding: 5px 12px;
+   border-radius: 1.2rem 1.2rem 1.2rem 0;
+   color: white;
+    margin-bottom: 0;
+    max-width: 60%;
+}
+.Adminchat-container-rigth-client{
+    direction: rtl;
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    padding: 12px;
+}
+.Adminchat-container-rigth-client p{
+    width: fit-content;
+    border-radius: 1.2rem 1.2rem 0 1.2rem ;
+    padding: 5px 12px;
+    background-color: white;
+    margin-bottom: 0;
+    max-width: 60%;
+}
+.Adminchat-container-rigth-client img{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid white;
+}

@@ -1,0 +1,102 @@
+.page3{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page3 .page3-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    margin-top: 40px;
+    animation:  text-page3 1s;
+    justify-content: space-between;
+}
+@keyframes text-page3{
+    0%{
+        translate: 0px 150px;   
+    }
+}
+.page3 .page3-container  .page3-container-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.page3 .page3-container  .page3-container-text p {
+    font-size: 14px;
+}
+.page3 .page3-container  .page3-container-text h6{
+    font-size: 22px;
+}
+.page3-container-text-btn{
+    width: 100%;
+}
+.page3 .page3-container  .page3-container-text .page3-container-text-btn button{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border: none; 
+    border-radius: 5px;
+    width: 200px;
+}
+.page3 .page3-container .page3-container-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page3-container-imgs-img1{
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+.page3-container-imgs-img2{
+    width: 100%;
+    direction:rtl;
+    position: relative;
+    bottom: 50px;
+}
+.page3 .page3-container .page3-container-imgs img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.page4 .page4-container{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid rgba(0, 0, 0, 0.096);
+}
+.img-left-page4-container{
+    height: 80vh;
+    background:linear-gradient(to left,rgba(0, 0, 255, 0.067),rgb(255, 255, 255)), url("https://www.shutterstock.com/image-photo/portrait-cheerful-businesswoman-sitting-desk-600nw-2250909397.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.page4 .page4-container  .page4-container-text{
+    padding: 40px ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.page4 .page4-container .img-best-page4 img{
+    height: 80px;
+    margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+    .page3{
+     display: none;
+    }
+    .page4{
+     display: none;
+    }
+    .page3 .page3-container{
+        display: none;
+    }
+ }

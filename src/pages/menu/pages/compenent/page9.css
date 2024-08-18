@@ -1,0 +1,69 @@
+.page9{
+    background-color: rgb(242, 242, 242);
+}
+.page6-card-user{
+    background-color: white;
+    margin:10px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(132, 132, 132);
+}
+.page6-card-user .imgUser{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    background-color: white;
+    border: 1px solid rgb(132, 132, 132);
+    position: relative;
+    top: -50px;
+}
+.page6-card-user .imgStarts{
+    height: 20px;
+    width: 60%;
+    object-fit: cover;
+    object-position: center;
+}
+.arrow{
+    background-color: blue;
+    rotate: -65deg;
+    position: fixed;
+    bottom: 45px;
+    font-size: 24px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+    border: 1px solid white;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    right: 45px;
+    animation: arrow 1s;
+    z-index: 3;
+}
+@keyframes arrow {
+    0%{
+        bottom: 800px;
+    }
+}
+
+.page7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .page8{
+     display: none;
+    }
+    .page9{
+     display: none;
+    }
+    .page7{
+        display: none;
+    }
+ }

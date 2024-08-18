@@ -1,0 +1,13 @@
+.viewNotif{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 106, 0.686);
+}
+.viewNotif-container{
+    display: flex;
+    height: 50%;
+}

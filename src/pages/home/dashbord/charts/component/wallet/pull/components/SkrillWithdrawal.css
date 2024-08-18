@@ -1,0 +1,66 @@
+.input-skrill-Withdrawal{
+    width: 90%;
+}
+.input-skrill-Withdrawal h6{
+    background-color: transparent;
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+}
+
+.skrill-Withdrawal-name-bank {
+    width:100%;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgba(0, 0, 0, 0.248);
+    height: 35px;
+    margin: 5px 0;
+}
+.skrill-Withdrawal-name-bank input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 2px;
+}
+.your-balance-metabank{
+    color: blue;
+    font-size: 18px;
+    width: 85%;
+    font-weight: 700;
+}
+.inp-money-withdrawale{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inp-money-withdrawale input{
+    font-size: 80px;
+    width: 200px;
+    outline: none;
+    border: none;
+}
+.btn-withdraw{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn-withdraw button{
+    background:blue;
+    color: white;
+    width: 100px;
+    height: 32px;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-withdraw button:hover{
+    background-color: rgb(50, 50, 255);
+}

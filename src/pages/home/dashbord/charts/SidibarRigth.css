@@ -1,0 +1,108 @@
+.Sidibar-Rigth{
+    display: flex;
+    justify-content: center;
+}
+.Sidibar-Rigth-container{
+    background-color: #3f5479;
+}
+
+.Sidibar-Rigth-container-top-title1 img{
+    height: 16px;
+    width: 16px;
+    object-fit: cover;
+    object-position: center;
+}
+.Sidibar-Rigth-container-top-title1 h6{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-bottom: 0;
+}
+.Sidibar-Rigth-container-top{
+    background-color: #0d1524;
+    height: 50%;
+    overflow: auto;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.Sidibar-Rigth-container-top p {
+    margin: none;
+    color: white;
+}
+.Sidibar-Rigth-container-top-title1{
+    background-color: #3f5479;
+    position: fixed;
+    top: 0;
+    height: 30px;
+    right: 5px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    gap: 5px;
+}
+.Sidibar-Rigth-container-top-title2{
+    display: flex;
+    gap: 8px;
+    position: fixed;
+    top: 26px;
+    background-color: #6079a3;
+    padding: 0 4px;
+}
+.Sidibar-Rigth-container-top-title2 p{
+    margin: 0;
+}
+.Sidibar-rigth-prices{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.089);
+}
+.Sidibar-rigth-prices p {
+    margin: 0;
+    font-size: 13px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Sidibar-Rigth-container-top-title2 p{
+    font-size: 12px;
+}
+@media (max-width: 600px) {
+    .Sidibar-Rigth{
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    .Sidibar-Rigth{
+        display: none;
+    }
+}
+.Sidibar-Rigth-container-mellieur h6{
+    color: #e0e4eb;
+}
+.Sidibar-Rigth-container-mellieur-contianer{
+    padding: 5px;
+}
+.Sidibar-Rigth-container-mellieur-contianer p{
+    margin: 0;
+    display: flex;
+    color: #e0e4eb;
+    justify-content: space-between;
+}
+.Sidibar-Rigth-container-mellieur-btn button{
+    background: linear-gradient(to left,yellow,orange);
+    height: 45px;
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+}
+.Sidibar-Rigth-container-mellieur-btn button:hover{
+    background: linear-gradient(to left,orange,yellow);}

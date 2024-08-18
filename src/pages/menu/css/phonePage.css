@@ -1,0 +1,79 @@
+.PhonePage{
+    display: none;
+    height: 100vh;
+    flex-direction: column;
+    background:linear-gradient(45deg,rgb(49, 49, 49),rgb(49, 49, 49));
+}
+.Phonepage-header-container {
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Phonepage-header-container-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.Phonepage-header-container-bottom img{
+    height: 22px;
+    width: 22px;
+}
+.Phonepage-header-container-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.Phonepage-header-container-logo img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+.Phonepage-header-container h3{
+    margin: 0;
+}
+.Phonepage-header-container a{
+    font-size: 30px;
+    width: 100%;
+    width: fit-content;
+}
+@media (max-width: 600px){
+    .PhonePage{
+        display: flex;
+    }
+}
+.SidibarPhone{
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    animation:sidibar 1s ;
+    background:linear-gradient(45deg,rgba(90, 90, 90, 0.973),rgb(128, 128, 128));
+}
+.Phonepage-header-container-text{
+    width: 100%;
+    height: 80vh;
+    padding: 100PX 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Phonepage-header-container-text h3{
+    color: rgb(233, 232, 232);
+    font-size: 23px;
+    text-decoration: underline;
+    gap: 10px;
+    display: flex;
+}
+.Phonepage-header-container-text h3:hover{
+    color: rgb(233, 232, 232);
+    background-color: rgba(240, 248, 255, 0.253);
+    padding: 5px;
+}
+@keyframes sidibar{
+    0%{
+        translate: -150px;
+    }
+}

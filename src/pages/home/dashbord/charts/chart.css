@@ -1,0 +1,65 @@
+.select{
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    background-color: #435c86;
+    border: 1px solid #6f93d1;
+    color: white;
+    left: 60px;
+    width: 150px;
+}
+
+.chart{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Deal{
+    display: none;
+    height: 6%;
+    position: fixed;
+    bottom: 0;
+}
+audio{
+    height: 0px;
+    position: fixed;
+    z-index: -1;
+}
+.Deal button{
+    height: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.Deal-input{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.Deal-input input{
+    height: 100%;
+    outline: none;
+    border: none;
+    width: 50%;
+    font-size: 18px;
+    font-weight: 600;
+}
+@media (max-width: 600px) {
+    .chart{
+        height: 94%;
+        flex-direction: column;
+    }
+    .Chart-navbar{
+        flex-direction: column;
+        background-color: #203455;
+    }
+    .Deal{
+        display: flex;
+    }
+    .select{
+        width: 50px;
+    }
+}

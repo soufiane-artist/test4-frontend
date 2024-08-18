@@ -1,0 +1,89 @@
+.admin-dash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(45deg,blue,rgb(167, 167, 255),blue,blue,rgb(126, 126, 250),blue);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+.admin-dash .admin-dash-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.admin-dash-contianer-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.admin-dash-contianer-header-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: 1px solid rgb(110, 110, 110);
+    cursor: pointer;
+    background-color: white;
+}
+.admin-dash-contianer-header-btn:hover{
+    background-color: rgb(225, 225, 225);
+}
+.admin-dash-users-container-user-header{
+    background-color: rgb(255, 255, 255);
+    max-height: 45px;
+    display: flex;
+}
+.admin-dash-users-container-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-dash-users-container-user-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(218, 218, 218);
+}
+.admin-dash-users-container-user-col h1{
+    font-size: 15px;
+}
+.admin-dash-users-container-user-data{
+    display: flex;
+    overflow: hidden;
+    height: 85vh;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+.admin-dash-users-container-user-col img{
+    height: 30px;
+    width :30px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    background-color: white;
+    border: 1px solid rgb(171, 171, 171);
+}
+.olineUser{
+    background-color: rgb(200, 200, 200);
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    position: relative;
+    left: -5px;
+}
+.admin-dash-contianer-header-btn-active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: 1px solid rgb(110, 110, 110);
+    cursor: pointer;
+    background-color: rgb(255, 255, 92);
+}

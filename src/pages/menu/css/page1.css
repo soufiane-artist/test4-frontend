@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ga+Maamli&family=Permanent+Marker&display=swap');.page1{
+    height: 100vh;
+    background:linear-gradient(45deg,rgba(49, 49, 49, 0.808),rgb(49, 49, 49)),url(https://png.pngtree.com/thumb_back/fh260/background/20240603/pngtree-blue-abstract-vector-realistic-luxury-elegant-dark-background-with-golden-banner-image_15841224.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-header-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 0px;
+}
+.menu-header-container h1{
+    margin: 0;
+}
+.menu-header-scrollbar{
+    display: flex;
+    gap: 24px;
+}
+.menu-header-scrollbar-a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+}
+.menu-header-scrollbar-a:hover{
+    color: white;
+}
+.menu-header-logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.menu-header-logo img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+.menu-header-logo h1{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+.menu-header-button{
+    display: flex;
+    gap: 10px;
+}
+.menu-header-btn-Login{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    background-color: transparent;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+}
+.menu-header-btn-Login:hover{
+    color: white;
+}
+.menu-header-btn-Register{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    font-weight: 700;
+    border: 1px solid rgb(255, 230, 0);
+    background-color: transparent;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+.menu-header-btn-Register:hover{
+    color: white;
+    background:linear-gradient(to top,rgba(129, 116, 0, 0.651),rgba(187, 201, 0, 0.699)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYI7jjatp_0Q8n1d5K7cOMY1cMGwx82AyjqWIyp_eghJEkqNZ3uH4FQ5GAsXy-Mq8Koyk&usqp=CAU);
+}
+.page1-meiller{
+    display: flex;
+    height: 90%;
+}
+.page1-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(to top,rgba(87, 87, 87, 0),rgba(140, 140, 140, 0.576),rgba(87, 87, 87, 0));
+    background-position: center;
+    background-size: cover;
+}
+.page1-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background:linear-gradient(to top,rgba(87, 87, 87, 0),rgba(140, 140, 140, 0.576),rgba(87, 87, 87, 0));
+    background-position: center;
+    background-size: cover;
+}
+.page1-image img{
+    height: 90%;
+}
+.page1-text{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px;
+    padding-top: 45px;
+}
+.page1-text h1{
+    font-family: "Abril Fatface", serif;
+    font-size: 80px;
+    width: 100%;
+}
+.page1-text-btn{
+    display: flex;
+    width: 100%;
+}
+.page1-text-btn-container{
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px;
+}
+.page1-text-login{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    background-color: transparent;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+}
+.page1-text-login:hover{
+    color: white;
+}
+.page1-text-register{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 230, 0);
+    background-color: transparent;
+    padding: 5px;
+    font-weight: 700;
+    width: 100px;
+    border-radius: 5px;
+    background:linear-gradient(to top,rgba(233, 210, 0, 0.651),rgba(238, 255, 3, 0.486)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYI7jjatp_0Q8n1d5K7cOMY1cMGwx82AyjqWIyp_eghJEkqNZ3uH4FQ5GAsXy-Mq8Koyk&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+}
+.page1-text-register:hover{
+    color: white;
+    background:linear-gradient(to top,rgba(150, 135, 0, 0.651),rgba(238, 255, 0, 0.699)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYI7jjatp_0Q8n1d5K7cOMY1cMGwx82AyjqWIyp_eghJEkqNZ3uH4FQ5GAsXy-Mq8Koyk&usqp=CAU);
+}
+.page1-text-bottom {
+    display: flex;
+    position: relative;
+    bottom: -60px;
+    gap: 10px;
+}
+.page1-text-bottom p{
+    font-size: 14px;
+}
+@media (max-width: 925px) {
+    .page1-text {
+        padding: 0 20px;
+    }
+    .page1-image img{
+        height: 60%;
+    }
+}
+@media (max-width: 600px) {
+   .page1{
+    display: none;
+   }
+}
+.page1-image-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page1-image-bottom-rigth{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page1-image-bottom-rigth-number{
+    background-color: yellow;
+    padding: 2px 20px;
+    border-radius: 3px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page1-image-bottom-rigth-number h1{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.page1-image-bottom-rigth-images p {
+    color: white;
+    width: 80%;
+    font-size: 12px;
+    margin: 0;
+}
+.page1-image-bottom-rigth-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page1-image-bottom-rigth-image img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.page1-image-bottom-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.page1-image-bottom-left p {
+    margin: 0;
+    font-size: 14px;
+}
+.page1-image-bottom-left img{
+    height: 45px;
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top,rgb(117, 117, 117),yellow,yellow,rgb(119, 119, 0));
+    
+}
+::-webkit-scrollbar-track{
+background: rgb(117, 117, 117);}

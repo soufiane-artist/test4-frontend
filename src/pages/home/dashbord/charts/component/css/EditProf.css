@@ -1,0 +1,127 @@
+.Setting{
+    height: 95%;
+    background:linear-gradient(to left,#213455,#213455,#213455),url(https://img.freepik.com/free-photo/ai-generated-3d-water_23-2150684907.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Setting .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.Setting .container .profile{
+    height: 98%;
+    width: 100%;
+    background-color: aliceblue;
+    backdrop-filter: blur(100px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+.Setting .container .profile h5{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    padding: 5px 10px;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgba(81, 81, 81, 0.759);
+    border: 1px solid rgba(0, 0, 0, 0.29);
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.Setting .container .profile .img-Profile img{
+    margin-top: 15px;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 139);
+    object-position: center;
+    object-fit: cover;
+}
+.Setting .container .profile .img-Profile p{
+    border-radius: 50%;
+    position: relative;
+    color: blue;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 75%;
+    bottom: 20%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 135, 0.238);
+}
+.Setting .container .profile .img-Profile p:hover{
+    color: rgb(0, 0, 1);
+}
+.Setting .container .profile p {
+    width: 80%;
+    text-align: center;
+    font-size: 14px;
+}
+.Setting .container .profile .inp{
+    width: 80%; 
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+.Setting .container .profile .inp h6{
+    font-size: 14px;
+    color: rgb(81, 81, 81);
+    margin: 0;
+}
+.Setting .container .profile .inp .inp-username{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(140, 140, 140);
+    padding: 0 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Setting .container .profile .inp .inp-username input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.Setting .container .profile .inp .btn-setting{
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Setting .container .profile .inp .btn-setting button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Setting .container .profile .inp .btn{
+    width: 150px;
+    margin: auto;
+}
+.btn-edit-pass{
+    text-decoration: underline;
+    cursor: pointer;
+}

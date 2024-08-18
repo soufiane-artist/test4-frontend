@@ -1,0 +1,180 @@
+.Login{
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 22, 22, 0.418);
+    z-index: 1;
+}
+.Login-container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid white;
+    height: 80%;
+    display: flex;
+    width: 60%;
+}
+.Login-container-left{
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.432),rgba(0, 0, 0, 0.178)), url(https://static.vecteezy.com/system/resources/thumbnails/001/849/553/small_2x/modern-gold-background-free-vector.jpg);
+    background-position: center;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    border-radius: 5px;
+}
+.Login-container-left-container{
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Login-container-left h3{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    color: rgb(0, 11, 56);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 12px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.Login-container-left h3:hover{
+    background-color: rgba(255, 255, 255, 0.745);
+    cursor: pointer;
+}
+.text-Login-container-left h2{
+    font-size: 25px;
+}
+.text-Login-container-left p{
+    font-size: 12px;
+}
+.Login-container-rigth{
+    display: flex;
+    flex-direction: column;
+}
+.Login-container-rigth-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 40px;
+    gap: 13px;
+}
+.Login-container-rigth-container h5{
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(0, 0, 119);
+    text-decoration: underline;
+}
+.Login-container-rigth-container p{
+    font-size: 14px;
+    margin: 2px;
+    color: rgb(124, 124, 124);
+}
+.Login-container-rigth-container-input{
+    font-size: 14px;
+}
+.Input-Username{
+    background-color: rgb(240, 240, 240);
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+}
+.Input-Username a{
+    font-size: 20px;
+    color:rgb(148, 148, 148) ;
+    cursor: default;
+}
+
+.Input-Username input{
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+    font-weight: 400;
+    font-size: 16px;
+}
+.Input-Password{
+    background-color: rgb(240, 240, 240);
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+}
+.Input-Password input{
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+    font-weight: 400;
+    font-size: 16px;
+}
+.Input-Password a{
+    font-size: 20px;
+    color:rgb(148, 148, 148) ;
+}
+.Input-checked{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    gap: 10px;
+}
+
+.Input-checked p{
+    margin: 0;
+}
+.Login-container-rigth-btn{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+.Login-container-rigth-btn button{
+    width: 100%;
+    background: rgb(0, 0, 119);
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.Login-container-rigth-btn button:hover{
+    background-color: rgb(1, 86, 160);
+}
+.Login-container-rigth-btn-close{
+    display: flex;
+    padding: 5px;
+    direction: rtl;
+    color: rgb(0, 0, 119);
+    font-size: 23px; 
+    position: relative;
+}
+.Login-container-rigth-btn-close:hover{
+    color: rgb(1, 86, 160);
+    cursor: pointer;
+}
+.link-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .Login{
+     display: none;
+    }
+ }
+
+@media (max-width: 950px) {
+    .Login-container-left{
+     display: none;
+    }
+ }

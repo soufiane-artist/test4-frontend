@@ -1,0 +1,15 @@
+.notif-container{
+    height: 90%;
+    overflow: auto;
+}
+.notif-container-msg{
+    background-color: #46597a;
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+.notif-container-msg span{
+    background-color: white;
+    color: #46597a;
+    font-size: 12px;
+    font-weight: 800;
+}

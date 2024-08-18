@@ -1,0 +1,47 @@
+.admin-dash-notif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+}
+.admin-dash-notif-container{
+    height: 100%;
+    overflow: auto;
+}
+.admin-dash-notif-container-header{
+    display: flex;
+    background-color: white;
+
+}
+.admin-dash-notif-container-header h3{
+    font-size: 15px;
+}
+.admin-dash-notif-container-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(147, 147, 147);
+}
+.admin-dash-notif-container-col img{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid blue;
+    border-radius: 50%;
+}
+.admin-dash-notif-container-data{
+    display: flex;
+    background-color: aqua;
+}
+.admin-dash-notif-container-data .admin-dash-notif-container-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 30px;
+    background-color: white;
+}
+.admin-dash-notif-container-data h3{
+    font-size: 14px;
+    margin-bottom: none;
+}

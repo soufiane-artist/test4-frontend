@@ -1,0 +1,44 @@
+.verify-email{
+    height: 100vh;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.verify-email-container{
+    background-color: white;
+    height: 80%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+.verify-email-container-h1{
+    font-size: 150px;
+    margin-bottom: 15px;
+}
+.verify-email-container h3{
+    font-size: 43px;
+}
+.verify-email-container p{
+    font-size: 16px;
+}
+.verify-email-container .verify-botton{
+    height: 45px;
+    width: 200px;
+    background: linear-gradient(to left,blue,rgb(151, 151, 255),blue,rgb(162, 162, 255));
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.verify-email-container .verify-botton:hover{
+    background: linear-gradient(to left,rgb(189, 189, 255),rgb(151, 151, 255),blue,rgb(211, 211, 255));
+}
+@media (max-width: 600px) {
+    .verify-email-container{
+     width: 96%;
+    }
+ }

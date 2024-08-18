@@ -1,0 +1,17 @@
+.about-section{
+    padding: 5px;
+}
+.about-btn{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.about-btn a{
+    background-color: blue;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    position: fixed;
+    right: 10px;
+}
