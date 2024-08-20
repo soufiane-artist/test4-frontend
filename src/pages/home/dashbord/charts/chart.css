@@ -1,6 +1,6 @@
 .select{
     position: fixed;
-    z-index: 2;
+    z-index: 0;
     top: 10px;
     background-color: #435c86;
     border: 1px solid #6f93d1;
@@ -20,6 +20,7 @@
     height: 6%;
     position: fixed;
     bottom: 0;
+    z-index: 1;
 }
 audio{
     height: 0px;

@@ -17,7 +17,7 @@ function Header({setLogin,setregister}) {
             </div>
             <div className="menu-header-scrollbar">
                 <a href="/service" className="menu-header-scrollbar-a">Service</a>
-                <a href="/about" className="menu-header-scrollbar-a">About</a>
+              <a href="/about" className="menu-header-scrollbar-a">About</a>
                 <a onClick={contactbtn} href="#" className="menu-header-scrollbar-a">Contact</a>
             </div>
             <div className="menu-header-button">

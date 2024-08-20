@@ -233,8 +233,8 @@ function Chart({lineSeriesCh,histogramSeriesCh,baselineSeriesCH,areaSeriesChart,
       <div className='Chart-navbar' style={{display:'flex',height:'100vh'}}>
       <div className="chart" ref={chartRef} ></div>
       <Crypto userAdmi={userAdmin} socket={socket} min={min} setData={setData} setDataSidibarRith={setDataSidibarRith} value={value}  setValue={setValue} />
-      <SidibarRigth setMont={setMont} value={value} socket={socket} arrivalDeal={arrivalDeal} setArriv={setArriv} dataSidibarRigth={dataSidibarRigth} />
-      <OpenDealphone value={value} setMont={setMont} socket={socket} arrivalDeal={arrivalDeal} setArriv={setArriv} dataSidibarRigth={dataSidibarRigth} setDialNotif={setDialNotif} dealValue={dealValue}  setdealValue={setdealValue} />
+      <SidibarRigth setLoading={setLoading} setMont={setMont} value={value} socket={socket} arrivalDeal={arrivalDeal} setArriv={setArriv} dataSidibarRigth={dataSidibarRigth} />
+      <OpenDealphone value={value} setMont={setMont} socket={socket} arrivalDeal={arrivalDeal} setArriv={setArriv} dataSidibarRigth={dataSidibarRigth} setDialNotif={setDialNotif} dealValue={dealValue} setLoading={setLoading}  setdealValue={setdealValue} />
       {dealNotif &&<DealNotif/>}
       </div> 
     </div>

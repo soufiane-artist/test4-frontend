@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { useSelector } from 'react-redux';
 import axios from 'axios'
 import { toast } from 'react-toastify';
-function OpenDeal({totale,seTotale,setAccount,data,setMont,socket,value,userAdmin}) {
+function OpenDeal({totale,seTotale,setAccount,data,setMont,socket,value,userAdmin,setLoading}) {
 
 
   const {user} = useSelector(state => state.auth)
@@ -15,6 +15,9 @@ function OpenDeal({totale,seTotale,setAccount,data,setMont,socket,value,userAdmi
   console.log(userAdmin.deals);
   
   const closeDeal = async(id,openPrice,buy,volume,name)=>{
+
+    setLoading(true)
+
     if(value+'USDT' === name ){
       await axios.put(`${process.env.REACT_APP_API_URL}/deals/`+id,{
         closePrice:data.close,

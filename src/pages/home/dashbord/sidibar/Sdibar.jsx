@@ -68,9 +68,10 @@ function Sdibar({seTCharts,setAdminDash,SetEditProf,SetAnalytics,setBalance,seto
             <h2 id='Account'><MdAccountCircle/><span>Account</span> </h2>
             <h2 id='Supports' ><MdOutlineSupportAgent /><span>Supports</span><span className='deal-number'>1</span> </h2>
            {user?.isAdmin && <h2 id='AdminBtn' onClick={()=>setAdminDash(true)}><MdOutlineSupportAgent /><span>Admin</span> </h2>}
+              <hr  />
+            <h2 onClick={logOut}><span>Log-out</span><PiPowerFill/></h2>
             </div>
             <div className="Dasch-Sidibar-Container-logout">
-            <h2 onClick={logOut}><span>Log-out</span><PiPowerFill/></h2>
            </div>
         </div>
         <div onClick={()=>setSidibar(false)}    className="dash-arrow-close">

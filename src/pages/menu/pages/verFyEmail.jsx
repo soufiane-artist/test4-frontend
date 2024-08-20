@@ -1,15 +1,18 @@
 import React, { useEffect } from 'react'
 import { MdVerified } from "react-icons/md";
 import './compenent/verify.css'
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
 
 function VerFyEmail() {
 
-    const {userId} = useParams()
-    const {token} = useParams()
+    const query = new URLSearchParams(useLocation().search);
+    const userId = query.get('userId');
+    const token = query.get('token');
+
+
 
     console.log(userId);
     console.log(token);

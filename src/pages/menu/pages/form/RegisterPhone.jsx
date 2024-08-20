@@ -72,9 +72,7 @@ function RegisterPhone({sidiabrH,setSidibarH,sidibar,setsidibar   }) {
             {sidiabrH && <Sidibar sidibar={sidibar}   setSidibarH={setSidibarH} setsidibar={setsidibar} />}
             <HeaderPhone sidiabrH={sidiabrH}  setSidibarH={setSidibarH}  sidibar={sidibar}  setsidibar={setsidibar} />
             <div className="LoginPone-container text-white">
-            <h3 className="back-icons">
-            <IoIosArrowBack onClick={()=>navigate(-1)} />
-            </h3>
+           
             <h2>
                 Create Account
             </h2>

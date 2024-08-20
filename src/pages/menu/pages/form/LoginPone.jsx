@@ -46,8 +46,8 @@ function LoginPone({sidiabrH,setSidibarH,sidibar,setsidibar   }) {
         await dispatch(LoginUser({email,password}))
         setTimeout(()=>{
             setLoading(false)
-            navigate('/')
-        },3000)
+            window.location.reload()
+        },1000)
     }
 
 
@@ -56,9 +56,7 @@ function LoginPone({sidiabrH,setSidibarH,sidibar,setsidibar   }) {
             {sidiabrH && <Sidibar sidibar={sidibar}   setSidibarH={setSidibarH} setsidibar={setsidibar} />}
             <HeaderPhone sidiabrH={sidiabrH}  setSidibarH={setSidibarH}  sidibar={sidibar}  setsidibar={setsidibar} />
             <div className="LoginPone-container text-white">
-            <h3 className="back-icons">
-            <IoIosArrowBack onClick={()=>navigate(-1)} />
-            </h3>
+            
             <h2>
                 Welcome Back
             </h2>

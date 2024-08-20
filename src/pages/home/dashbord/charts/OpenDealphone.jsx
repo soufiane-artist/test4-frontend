@@ -4,13 +4,14 @@ import { useSelector } from 'react-redux'
 import { toast } from 'react-toastify'
 import { io } from 'socket.io-client'
 
-function OpenDealphone({value,socket,dealValue,setdealValue,dataSidibarRigth,arrivalDeal,setArriv,setMont}) {
+function OpenDealphone({value,socket,dealValue,setdealValue,dataSidibarRigth,arrivalDeal,setArriv,setMont,setLoading}) {
 
 
     const {user} = useSelector(state => state.auth)
 
    
     const buy = async()=>{
+      setLoading(true)
       if(user?.amount < 1){
         return toast.error("Your balance is not enough")
       }
@@ -41,6 +42,7 @@ function OpenDealphone({value,socket,dealValue,setdealValue,dataSidibarRigth,arr
       },[arrivalDeal])
 
       const sell = async()=>{
+        setLoading(true)
         if(user?.amount < 1){
           return toast.error("Your balance is not enough")
         }

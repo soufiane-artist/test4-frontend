@@ -1,4 +1,4 @@
-import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 import Menu from './pages/menu/Menu';
 import PhoneLogin from './pages/menu/pages/PhonePage/PhoneLogin';
 import LoginPone from './pages/menu/pages/form/LoginPone';
@@ -38,13 +38,13 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <Router>
     <ToastContainer />
     <Routes>
       <Route path='*' element={user ? <Dashbord  /> : <Menu sidiabrH={sidiabrH}  setSidibarH={setSidibarH}  sidibar={sidibar}  setsidibar={setsidibar} />} />
       <Route path='/' element={user ? <Dashbord  /> : <Menu sidiabrH={sidiabrH}  setSidibarH={setSidibarH}  sidibar={sidibar}  setsidibar={setsidibar} />} />
-      <Route path='/Login' element={window.innerWidth < 700 ? <LoginPone sidiabrH={sidiabrH}  setSidibarH={setSidibarH}  sidibar={sidibar}  setsidibar={setsidibar}  /> : <Menu/>} />
-      <Route path='/Register' element={window.innerWidth < 700 ? <RegisterPhone sidiabrH={sidiabrH}  setSidibarH={setSidibarH}  sidibar={sidibar}  setsidibar={setsidibar} /> : <Menu/>} />
+      <Route path='/Login' element={!user ? (<LoginPone sidiabrH={sidiabrH}setSidibarH={setSidibarH} sidibar={sidibar}setsidibar={setsidibar}/>) : user?._id ? (<Dashbord />) : ( <Menu /> ) }/>
+      <Route path='/Register' element={!user ? <RegisterPhone sidiabrH={sidiabrH}  setSidibarH={setSidibarH}  sidibar={sidibar}  setsidibar={setsidibar} /> : <Dashbord/>} />
       <Route path='/About' element={<About/>} />
       <Route path='/Service' element={<Service/>} />
       <Route path='/Dashbord' element={user?.verfyEmail ? <Dashbord user={userAdmin} /> :window.innerWidth < 700 ? <LoginPone sidiabrH={sidiabrH}  setSidibarH={setSidibarH}  sidibar={sidibar}  setsidibar={setsidibar}  /> : <Menu />  } />
@@ -58,11 +58,11 @@ function App() {
       <Route path='/Dashbord/Pull/Skrill' element={user?.verfyEmail && <SkrillPull  imgBank={imgBank}/>} />
       <Route path='/Dashbord/Pull/Paypal' element={user?.verfyEmail && <PaypalPull  imgBank={imgBank}/>} />
       <Route path='/Dashbord/Pull/' element={user?.verfyEmail && <BanksPull setImgBank={setImgBank} />} />
-      <Route path='/:userId/verify/:token' element={!user?.verfyEmail ? <VerFyEmail/> : <Menu/>} />
+      <Route path='/:userId/verify/:token' element={ <VerFyEmail/> } />
       <Route path='/reset-password/' element={<ForgatEmail/>} />
       <Route path='/reset-password/:userId/:token' element={<ResetPass/>} />
     </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 

@@ -7,7 +7,7 @@ import { io } from 'socket.io-client';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 
-function SidibarRigth({setMont,value,socket,dataSidibarRigth,setArriv,arrivalDeal}) {
+function SidibarRigth({setLoading,setMont,value,socket,dataSidibarRigth,setArriv,arrivalDeal}) {
 
     const container = useRef()
     const [dealValue,setdealValue] = useState(0.001)
@@ -49,6 +49,7 @@ function SidibarRigth({setMont,value,socket,dataSidibarRigth,setArriv,arrivalDea
       }, [dataSidibarRigth,value]);
 
       const buy = async()=>{
+        setLoading(true)
         if(user?.amount < 1){
           return toast.error("Your balance is not enough")
         }
@@ -100,6 +101,7 @@ function SidibarRigth({setMont,value,socket,dataSidibarRigth,setArriv,arrivalDea
     },[dealValue])
 
       const sell = async()=>{
+        setLoading(true)
         if(user?.amount < 1){
           return toast.error("Your balance is not enough")
         }
