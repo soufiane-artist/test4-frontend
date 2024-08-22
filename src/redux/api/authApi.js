@@ -9,8 +9,10 @@ export function RegisterUser (user){
         .then((res)=>{
             if(res.data.messageV){
                dispatch(authActions.register(true))
+               console.log(res.tata);
             }
             if(res.data.message){
+                console.log(res.tata);
                 toast.error(res.data.message);
             }
         }).catch(err=>{

@@ -11,7 +11,7 @@ function Userview({userDetails , setprofile}) {
         <div className="userview-container">
             <img src={userDetails?.profileImg.url} alt="" />
             <div className="userview-container-info">
-                <h6 >amount :  <span style={{background : 'yellow'}}>{userDetails?.amount.toFixed(2)} USD</span> </h6>
+                <h6 >amount :  <span style={{background : 'yellow'}}>{userDetails?.amount?.toFixed(2)} USD</span> </h6>
                 <h6>_id  :  {userDetails?._id}: </h6>
                 <h6>username :  {userDetails?.username} </h6>
                 <h6>email :  {userDetails?.email} </h6>

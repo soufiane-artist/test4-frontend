@@ -44,7 +44,7 @@ function DealNotif({value,data,socket,setAccount,userAdmin ,setUserAdmin,setMont
       }
      }).then(async(res)=>{
         await axios.put(`${process.env.REACT_APP_API_URL}/api/v2002/auth/deals/user/`+userAdmin?._id,{
-          /*amount*/amount:/*user?.amount*/ parseFloat(userAdmin?.amount) + parseFloat(res.data?.totale.toFixed(2))
+          /*amount*/amount:/*user?.amount*/ parseFloat(userAdmin?.amount) + parseFloat(res.data?.totale?.toFixed(2))
         },{
           headers : {
             Authorization : 'bearer ' + user.token
@@ -80,7 +80,7 @@ function DealNotif({value,data,socket,setAccount,userAdmin ,setUserAdmin,setMont
           <div className="DealNotif-navbar">
           <div className="DealNotifs-deal-amount">
                 <h5>Money balance: <span>{userAdmin?.amount?.toFixed(2)} </span></h5>
-                <h5>Available capital: <span>{userAdmin?.amount.toFixed(2)} </span></h5>
+                <h5>Available capital: <span>{userAdmin?.amount?.toFixed(2)} </span></h5>
                 <h5>Profit margin: <span>{totaleDeals}</span></h5>
             </div>
             <div className="DealNotifs-deal-position">
@@ -98,9 +98,9 @@ function DealNotif({value,data,socket,setAccount,userAdmin ,setUserAdmin,setMont
                     <h5>{new Date(d?.createdAt).toISOString()} </h5>
                     {
              d.close === false ?  <h3 style={{color:(d.buy === true ? data?.close - d?.openPrice < 0 ?  'red' : 'rgb(36, 113, 255)' :  d?.openPrice- data?.close < 0 ?  'red' : 'rgb(36, 113, 255)' )}} >{
-             (d?.buy === true ? (data?.close - d?.openPrice)*d.volume : (d?.openPrice - data?.close) * d.volume).toFixed(2) 
+             (d?.buy === true ? (data?.close - d?.openPrice)*d.volume : (d?.openPrice - data?.close) * d.volume)?.toFixed(2) 
             } </h3> : <h3 style={{color:d.totale > 0 ?'rgb(36, 113, 255)' : 'red'}} >{
-              (d?.totale).toFixed(2)
+              (d?.totale)?.toFixed(2)
             } </h3>
           }
                     </div>

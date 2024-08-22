@@ -42,7 +42,7 @@ function Page1({setLogin,setregister}) {
             <img src="https://fp-markets.net/assets/Mob-devices.png" alt="" />
             <div className="page1-image-bottom col-12">
               <div className="page1-image-bottom-left col-6">
-                <img src="pngwing.com.png" alt="" />
+                <img src="pngwing.png" alt="" />
                 <p className='text-white'>Explore our platform and experience secure trading.</p>
                 </div>
               <div className="page1-image-bottom-rigth col-6">

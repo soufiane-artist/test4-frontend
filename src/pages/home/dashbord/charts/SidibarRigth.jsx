@@ -21,7 +21,7 @@ function SidibarRigth({setLoading,setMont,value,socket,dataSidibarRigth,setArriv
            const totale = dataSidibarRigth.open - dataSidibarRigth.close
             SidibarRigth.innerHTML +=`<div class="Sidibar-rigth-prices d-flex col-12">
                 <p style="color:red;">${dataSidibarRigth.close}</p>
-                <p>${totale.toFixed(3)}</p>
+                <p>${totale?.toFixed(3)}</p>
                 <p style="color:#26a69a;">${dataSidibarRigth.open}</p>
            </div>`
         }

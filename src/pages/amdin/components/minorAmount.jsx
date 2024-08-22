@@ -18,7 +18,7 @@ function MinorAmount({usersData,setuserDetails,setblockUserAccount}) {
         <div className="admin-dash-users-container-user-col col-1"> message</div>
 
         <div style={{flexDirection:'row',justifyContent:'center',gap:'40px'}} className="admin-dash-users-container-user-col col-1">
-            <h6 style={{background:'yellow',padding:'2px 10px',color:'black'}}>{user?.amount.toFixed(2)}</h6>
+            <h6 style={{background:'yellow',padding:'2px 10px',color:'black'}}>{user?.amount?.toFixed(2)}</h6>
         </div>
         
         <div style={{flexDirection:'row',justifyContent:'center',gap:'10px'}} className="admin-dash-users-container-user-col col-2">

@@ -8,14 +8,10 @@ import { toast } from 'react-toastify';
 
 function VerFyEmail() {
 
-    const query = new URLSearchParams(useLocation().search);
-    const userId = query.get('userId');
-    const token = query.get('token');
+    const {userId} = useParams()
+    const {token} = useParams()
 
 
-
-    console.log(userId);
-    console.log(token);
     useEffect(()=>{
         if(userId){
             const VerfyEmail =async()=>{

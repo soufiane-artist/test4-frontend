@@ -52,7 +52,7 @@ function Sdibar({seTCharts,setAdminDash,SetEditProf,SetAnalytics,setBalance,seto
                 <div className="Profile-user-info">
                 <img src={user?.profileImg?.url} alt="" />
                 <div className="Profile-user-name">
-                <h3>{user?.amount.toFixed(2)} USD </h3>
+                <h3>{user?.amount?.toFixed(2)} USD </h3>
                 <h5>{user?.email} </h5>
                 </div>
                 </div>
