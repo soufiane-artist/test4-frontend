@@ -62,6 +62,7 @@ function Dashbord({}) {
   const [histogramSeriesCh,sethistogramSeriesCh] = useState(false) // true
   const [lineSeriesCh,setlineSeriesCh] = useState(false) // true check box
 
+
   //socket io
   const socket = useRef()
   useEffect(()=>{
@@ -74,7 +75,7 @@ function Dashbord({}) {
       if(userId){
         const getUser =async()=>{
           setLoading(true)
-          await  axios.get(`${process.env.REACT_APP_API_URL}/user/`+userId)
+          await  axios.get(`${process.env.REACT_APP_API_URL}/api/v2002/auth/user/`+userId)
           .then((res)=>{
               if(res.data){
                   localStorage.setItem('userAdmin',JSON.stringify(res.data))
@@ -90,8 +91,6 @@ function Dashbord({}) {
         getUser()
       }
     })
-   
-    
     return ()=>{
         socket.current.off('onlineUsers')
     }
@@ -106,7 +105,6 @@ function Dashbord({}) {
   },[socket.current])
 
 
-  
 
   
   

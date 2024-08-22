@@ -23,7 +23,7 @@ function ResetPass() {
 
     useEffect(()=>{
         const Verfy = async()=>{
-            await axios.get(`${process.env.REACT_APP_API_URL}/resetPass/${userId}/${token}`).then((res)=>{
+            await axios.get(`${process.env.REACT_APP_API_URL}/api/v2002/auth/resetPass/${userId}/${token}`).then((res)=>{
                 console.log(res.data);
             }).catch((err)=>{
                 console.log(err);
@@ -44,7 +44,7 @@ function ResetPass() {
         if(password  !==  password2 ){
             return toast.error('Password does not match')
         }
-        await axios.post(`${process.env.REACT_APP_API_URL}/resetPass/${userId}/${token}`,{
+        await axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/resetPass/${userId}/${token}`,{
             password : password
         }).then((res)=>{
             if(res.data.message){

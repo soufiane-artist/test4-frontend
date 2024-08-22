@@ -51,7 +51,7 @@ function EditProfile({userInfo,setAccount,setMont}) {
         if(fileImage){
             setloadingFile(true)
             const updateImgProfile = async()=>{
-                await axios.post(`${process.env.REACT_APP_API_URL}/img/${user?._id}`,formdata,{
+                await axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/img/${user?._id}`,formdata,{
                     headers : {
                       Authorization : 'bearer ' + user.token
                     }
@@ -70,7 +70,7 @@ function EditProfile({userInfo,setAccount,setMont}) {
     },[fileImage])
     const updateCompte = async()=>{
         setloadingUpdate(true)
-        await axios.put(`${process.env.REACT_APP_API_URL}/profile/${user?._id}`,{
+        await axios.put(`${process.env.REACT_APP_API_URL}/api/v2002/auth/profile/${user?._id}`,{
                 username : username === "" ? null : username , 
                 adress : adress === "" ? null : adress , 
                 sexy : sexy === "" ? null : sexy , 

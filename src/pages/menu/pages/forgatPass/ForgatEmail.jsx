@@ -15,7 +15,7 @@ function ForgatEmail() {
     const send = async(e)=>{
         setLoading(true)
         e.preventDefault()
-        await axios.post(`${process.env.REACT_APP_API_URL}/forgotPass`,{
+        await axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/forgotPass`,{
             email:email
         }).then((res)=>{
             if(res.data.message === 'user not found'){

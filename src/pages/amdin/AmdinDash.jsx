@@ -27,7 +27,7 @@ useEffect(()=>{
    //get all users
    useEffect((getState)=>{
     const getAllUsers= async()=>{
-      await axios.get(`${process.env.REACT_APP_API_URL}/users`)
+      await axios.get(`${process.env.REACT_APP_API_URL}/api/v2002/auth/users`)
       .then((res)=>{
         setUserData(res.data)
         setloading(false)
@@ -39,7 +39,7 @@ useEffect(()=>{
   useEffect(()=>{
     setloading(true)
     const getAllUsers= async()=>{
-      await axios.get(`${process.env.REACT_APP_API_URL}/notifs`)
+      await axios.get(`${process.env.REACT_APP_API_URL}/api/v2002/auth/notifs`)
       .then((res)=>{
         setusersnotif(res.data)
         setloading(false)

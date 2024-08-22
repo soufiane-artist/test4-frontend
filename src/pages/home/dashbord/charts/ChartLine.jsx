@@ -25,7 +25,7 @@ function Chart({BlueRibbon,userAdmin,value,setValue, setLoading ,setData,min,set
   
   const socket = useRef()
   useEffect(()=>{
-    socket.current = io ('http://localhost:2002')
+    socket.current = io ('http://localhost:2002/')
     socket.current.emit('add-user',user?._id)
     return ()=>{
         socket.current.off('onlineUsers')

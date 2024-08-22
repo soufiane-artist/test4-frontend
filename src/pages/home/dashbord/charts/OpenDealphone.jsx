@@ -19,7 +19,7 @@ function OpenDealphone({value,socket,dealValue,setdealValue,dataSidibarRigth,arr
         audio.volume = 0.3
         audio.play()
         if(dataSidibarRigth){
-            await axios.post(`${process.env.REACT_APP_API_URL}/deal`,{
+            await axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/deal`,{
                 open:dataSidibarRigth.close,
                 close:0,
                 totale:0,
@@ -50,7 +50,7 @@ function OpenDealphone({value,socket,dealValue,setdealValue,dataSidibarRigth,arr
         audio.volume = 0.3
         audio.play()
          if(dataSidibarRigth){
-            await axios.post(`${process.env.REACT_APP_API_URL}/deal`,{
+            await axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/deal`,{
                 open:dataSidibarRigth?.close,
                 close:0,
                 totale:0,

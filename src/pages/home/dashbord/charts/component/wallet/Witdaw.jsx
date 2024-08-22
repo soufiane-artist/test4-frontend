@@ -38,7 +38,7 @@ function Witdraw({setMont}) {
     const getUseById  = async()=>{
        if(clientId.length > 0){
         setLoadingClien(true)
-        await axios.get(`${process.env.REACT_APP_API_URL}/user/`+clientId)
+        await axios.get(`${process.env.REACT_APP_API_URL}/api/v2002/auth/user/`+clientId)
         .then((res)=>{
          
           setClientSuccess(true)
@@ -74,7 +74,7 @@ function Witdraw({setMont}) {
         toast.error( 'Only numbers must be entered' );
         return setLoading(false)
      }
-     await axios.post(`${process.env.REACT_APP_API_URL}/send-money`,{
+     await axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/send-money`,{
         from : user._id,
         to : userTrim,
         ment: amountNumber

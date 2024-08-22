@@ -38,7 +38,7 @@ function Skrill({setSkrill,imgBank,setAccount}) {
       }*/
       const formdata = new FormData()
       formdata.append('image',file)
-      await axios.post(`${process.env.REACT_APP_API_URL}/deposit/skrill/`+user?._id,formdata,{
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/deposit/skrill/`+user?._id,formdata,{
         amount :coupone ?  parseFloat(coupone) : 0,
       }).then((res)=>{
         toast.success("image Upload ")
@@ -66,7 +66,7 @@ function Skrill({setSkrill,imgBank,setAccount}) {
     setCouponeSucc(false)
     setCouponeErr(false)
 
-    await axios.get(`${process.env.REACT_APP_API_URL}/coponeUser/`+coupone).then((res)=>{
+    await axios.get(`${process.env.REACT_APP_API_URL}/api/v2002/auth/coponeUser/`+coupone).then((res)=>{
       if(res.data[0]?.coupone){
         setCouponeSucc(true)
       }else{

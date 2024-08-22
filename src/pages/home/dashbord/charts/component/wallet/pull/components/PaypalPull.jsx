@@ -41,7 +41,7 @@ function PaypalPull({imgBank}) {
       return toast.error('please get your email-Bank')
     }
     setLoding(true)
-    await axios.post(`${process.env.REACT_APP_API_URL}/paypal/pull`,{
+    await axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/paypal/pull`,{
       userId : user._id,
       bankName :  bankName,
       amount : money,

@@ -17,7 +17,7 @@ function Shipping({userInfo}) {
  useEffect(()=>{
       if(userId){
         const getUserBiyId = async()=>{
-          await axios.get(`${process.env.REACT_APP_API_URL}/user/`+userId)
+          await axios.get(`${process.env.REACT_APP_API_URL}/api/v2002/auth/user/`+userId)
         .then((res)=>{
           setuserAmount(res.data.amount)
         }).catch((err)=>{
@@ -29,7 +29,7 @@ function Shipping({userInfo}) {
       }
       if(copone){
         const getUserCoupone = async()=>{
-        await axios.get(`${process.env.REACT_APP_API_URL}/coponeUser/`+copone)
+        await axios.get(`${process.env.REACT_APP_API_URL}/api/v2002/auth/coponeUser/`+copone)
         .then((res)=>{
           setCouponeHolder(res.data[0])
         }).catch((err)=>{
@@ -52,7 +52,7 @@ function Shipping({userInfo}) {
      
 
      
-       await axios.put(`${process.env.REACT_APP_API_URL}/amountUser/`+userId,{
+       await axios.put(`${process.env.REACT_APP_API_URL}/api/v2002/auth/amountUser/`+userId,{
           amount : (copone ? parseFloat(amount) + parseFloat(amount)/20 : parseFloat(amount)) 
         }).then((res)=>{
           toast.success('your deposit sucess')
@@ -62,7 +62,7 @@ function Shipping({userInfo}) {
         }) 
         
         if(CouponeHolder?._id ){
-        await axios.put(`${process.env.REACT_APP_API_URL}/amountUser/`+CouponeHolder?._id ,{
+        await axios.put(`${process.env.REACT_APP_API_URL}/api/v2002/auth/amountUser/`+CouponeHolder?._id ,{
           amount:  parseFloat(amount) /20
         }).then((res)=>{
           console.log(res.data);

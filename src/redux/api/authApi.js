@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 export function RegisterUser (user){
     return async(dispatch)=>{
-      await  axios.post(`${process.env.REACT_APP_API_URL}/register`,user)
+      await  axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/register`,user)
         .then((res)=>{
             if(res.data.messageV){
                dispatch(authActions.register(true))
@@ -29,7 +29,7 @@ export function CloseRegister (user){
 //login
 export function LoginUser (user){
     return async(dispatch)=>{
-        await  axios.post(`${process.env.REACT_APP_API_URL}/login`,user)
+        await  axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/login`,user)
         .then((res)=>{
             if(res.data.username){
                 localStorage.setItem('userInfo',JSON.stringify(res.data))

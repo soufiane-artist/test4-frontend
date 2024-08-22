@@ -36,7 +36,7 @@ function Paypal({user,imgBank}) {
         const userAmount = document.getElementById('userAmount')
         const valuePrice = parseFloat(userAmount.value)
         actions.order.capture().then(async()=>{
-          await axios.put(`${process.env.REACT_APP_API_URL}/deposit/paypal`,{
+          await axios.put(`${process.env.REACT_APP_API_URL}/api/v2002/auth/deposit/paypal`,{
                 amount :valuePrice,
                 userId : user._id
               }).then((res)=>{
@@ -57,7 +57,7 @@ function Paypal({user,imgBank}) {
         if(Coupone === "" ){
         return toast.error('please get coupone code')
       }
-      await axios.get(`${process.env.REACT_APP_API_URL}/coponeUser/`+Coupone).then((res)=>{
+      await axios.get(`${process.env.REACT_APP_API_URL}/api/v2002/auth/coponeUser/`+Coupone).then((res)=>{
         console.log(res.data);
         if(res.data[0]?.coupone){
           setCouponeSucc(true)

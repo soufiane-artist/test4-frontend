@@ -43,7 +43,7 @@ function SkrillPull({imgBank}) {
       return toast.error('please get your email-Bank')
     }
     setLoding(true)
-  await axios.post(`${process.env.REACT_APP_API_URL}/SkrillPull`,{
+  await axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/SkrillPull`,{
       userId : user._id,
       bankName :  bankName,
       amount : money,

@@ -19,7 +19,7 @@ function VerFyEmail() {
     useEffect(()=>{
         if(userId){
             const VerfyEmail =async()=>{
-                await axios.get(`${process.env.REACT_APP_API_URL}/${userId}/verify/${token}`)
+                await axios.get(`${process.env.REACT_APP_API_URL}/api/v2002/auth/${userId}/verify/${token}`)
                 .then((res)=>{
                     toast.success(res.data.message)
                 }).catch((err)=>{

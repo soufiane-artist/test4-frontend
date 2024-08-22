@@ -1,6 +1,6 @@
 .select{
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     top: 10px;
     background-color: #435c86;
     border: 1px solid #6f93d1;

@@ -15,7 +15,7 @@ function DealNotif({value,data,socket,setAccount,userAdmin ,setUserAdmin,setMont
   const [totaleDeals,setTotale] = useState()
   useEffect(()=>{
     const getUser =async()=>{
-      await  axios.get(`${process.env.REACT_APP_API_URL}/user/`+user?._id,{
+      await  axios.get(`${process.env.REACT_APP_API_URL}/api/v2002/auth/user/`+user?._id,{
         headers : {
           Authorization : 'bearer ' + user.token
         }
@@ -34,7 +34,7 @@ function DealNotif({value,data,socket,setAccount,userAdmin ,setUserAdmin,setMont
 
   const closeDeal = async(id,openPrice,buy,volume,name)=>{
     if(value+'USDT' === name ){
-      await axios.put(`${process.env.REACT_APP_API_URL}/deals/`+id,{
+      await axios.put(`${process.env.REACT_APP_API_URL}/api/v2002/auth/deals/`+id,{
         closePrice:data.close,
         close:true,
         totale:(buy === true ? data.close - openPrice : openPrice - data.close) * (volume < 0 ? 1 : volume)
@@ -43,7 +43,7 @@ function DealNotif({value,data,socket,setAccount,userAdmin ,setUserAdmin,setMont
         Authorization : 'bearer ' + user.token
       }
      }).then(async(res)=>{
-        await axios.put(`${process.env.REACT_APP_API_URL}/deals/user/`+userAdmin?._id,{
+        await axios.put(`${process.env.REACT_APP_API_URL}/api/v2002/auth/deals/user/`+userAdmin?._id,{
           /*amount*/amount:/*user?.amount*/ parseFloat(userAdmin?.amount) + parseFloat(res.data?.totale.toFixed(2))
         },{
           headers : {

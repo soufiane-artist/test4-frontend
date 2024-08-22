@@ -10,16 +10,13 @@ function OpenDeal({totale,seTotale,setAccount,data,setMont,socket,value,userAdmi
   const {user} = useSelector(state => state.auth)
  
 
-  console.log(userAdmin);
-
-  console.log(userAdmin.deals);
   
   const closeDeal = async(id,openPrice,buy,volume,name)=>{
 
     setLoading(true)
 
     if(value+'USDT' === name ){
-      await axios.put(`${process.env.REACT_APP_API_URL}/deals/`+id,{
+      await axios.put(`${process.env.REACT_APP_API_URL}/api/v2002/auth/deals/`+id,{
         closePrice:data.close,
         close:true,
         totale:(buy === true ? data.close - openPrice : openPrice - data.close) * (volume < 0 ? 1 : volume)
@@ -28,7 +25,7 @@ function OpenDeal({totale,seTotale,setAccount,data,setMont,socket,value,userAdmi
         Authorization : 'bearer ' + user.token
       }
      }).then(async(res)=>{
-        await axios.put(`${process.env.REACT_APP_API_URL}/deals/user/`+userAdmin?._id,{
+        await axios.put(`${process.env.REACT_APP_API_URL}/api/v2002/auth/deals/user/`+userAdmin?._id,{
           /*amount*/amount:/*user?.amount*/ parseFloat(userAdmin?.amount) + parseFloat(res.data?.totale.toFixed(2))
         },{
           headers : {
@@ -54,7 +51,7 @@ function OpenDeal({totale,seTotale,setAccount,data,setMont,socket,value,userAdmi
   useEffect(()=>{
     if(userAdmin.amount * (-1) > totale){
       const UpdateDeals =async ()=>{
-        await axios.put(`${process.env.REACT_APP_API_URL}/dealsClose/`+userAdmin._id,{
+        await axios.put(`${process.env.REACT_APP_API_URL}/api/v2002/auth/dealsClose/`+userAdmin._id,{
           closePrice : data?.close,
           data:data?.close
         },{
@@ -63,7 +60,7 @@ function OpenDeal({totale,seTotale,setAccount,data,setMont,socket,value,userAdmi
           }
          })
         .then(async(res)=>{
-          await axios.put(`${process.env.REACT_APP_API_URL}/amountUser/`+userAdmin._id,{
+          await axios.put(`${process.env.REACT_APP_API_URL}/api/v2002/auth/amountUser/`+userAdmin._id,{
             amount : - userAdmin?.amount ,
           },{
             headers : {

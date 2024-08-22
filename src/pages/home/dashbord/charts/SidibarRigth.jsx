@@ -57,7 +57,7 @@ function SidibarRigth({setLoading,setMont,value,socket,dataSidibarRigth,setArriv
         audio.volume = 0.3
         audio.play()
       if(dataSidibarRigth){
-          await axios.post(`${process.env.REACT_APP_API_URL}/deal`,{
+          await axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/deal`,{
               open:dataSidibarRigth.close,
               close:0,
               name:value+'USDT',
@@ -109,7 +109,7 @@ function SidibarRigth({setLoading,setMont,value,socket,dataSidibarRigth,setArriv
         audio.volume = 0.3
         audio.play()
          if(dataSidibarRigth){
-            await axios.post(`${process.env.REACT_APP_API_URL}/deal`,{
+            await axios.post(`${process.env.REACT_APP_API_URL}/api/v2002/auth/deal`,{
                 open:dataSidibarRigth?.close,
                 close:0,
                 totale:0,
